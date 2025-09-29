@@ -1,0 +1,43 @@
+# CyberMentor AI - Requirements
+# Core dependencies for the cybersecurity learning platform
+
+# CLI and Terminal UI
+rich>=13.0.0              # Beautiful terminal UI
+typer>=0.9.0              # Modern CLI framework
+click>=8.0.0              # CLI utilities (typer dependency)
+
+# AI Integration
+groq>=0.4.0               # GROQ API client for AI chat
+aiohttp>=3.8.0            # Async HTTP client
+requests>=2.31.0          # HTTP requests for APIs
+
+# Security and Crypto demos
+cryptography>=41.0.0      # Modern crypto library
+hashlib2>=1.0.0           # Additional hash functions
+bcrypt>=4.0.0             # Password hashing
+
+# Network demos
+scapy>=2.5.0              # Network packet manipulation (optional)
+python-nmap>=0.7.1        # Nmap integration (optional)
+socket                    # Built-in - network programming
+
+# Web security demos  
+requests>=2.31.0          # Already listed above
+beautifulsoup4>=4.12.0    # HTML parsing
+urllib3>=2.0.0            # URL handling
+
+# File analysis demos
+python-magic>=0.4.27      # File type detection
+pillow>=10.0.0            # Image processing
+exifread>=3.0.0           # EXIF data extraction
+
+# Development and testing
+pytest>=7.4.0             # Testing framework (dev)
+pytest-asyncio>=0.21.0    # Async testing (dev)
+black>=23.0.0             # Code formatting (dev)
+flake8>=6.0.0             # Linting (dev)
+
+# Optional - for advanced features
+streamlit>=1.28.0         # Web interface (optional)
+pandas>=2.0.0             # Data analysis (optional)
+matplotlib>=3.7.0         # Plotting (optional)
