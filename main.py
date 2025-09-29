@@ -6,7 +6,12 @@ A terminal-based educational program with AI integration
 
 import asyncio
 import sys
+import os
 from pathlib import Path
+
+# Configurar encoding para Windows
+if sys.platform.startswith('win'):
+    os.environ['PYTHONIOENCODING'] = 'utf-8'
 
 # Rich imports for beautiful terminal UI
 from rich.console import Console
@@ -49,7 +54,7 @@ class CyberMentor:
     def show_banner(self):
         """Display welcome banner"""
         banner_text = Text()
-        banner_text.append("🛡️  CYBERMENTOR AI", style="bold cyan")
+        banner_text.append("CYBERMENTOR AI", style="bold cyan")
         banner_text.append("\n")
         banner_text.append("Interactive Cybersecurity Learning Platform", style="italic white")
         
@@ -66,10 +71,10 @@ class CyberMentor:
         
         # Welcome message
         welcome_msg = """
-🤖 Hello! I'm your personal cybersecurity mentor.
-   I can help you learn through interactive demos and AI-powered explanations.
+Hello! I'm your personal cybersecurity mentor.
+I can help you learn through interactive demos and AI-powered explanations.
         
-🎯 What would you like to explore today?
+What would you like to explore today?
         """
         
         self.console.print(Panel(welcome_msg.strip(), 
@@ -173,9 +178,9 @@ class CyberMentor:
     def show_goodbye(self):
         """Show goodbye message"""
         goodbye_text = Text()
-        goodbye_text.append("Thank you for using CyberMentor AI! 🛡️", style="bold cyan")
+        goodbye_text.append("Thank you for using CyberMentor AI!", style="bold cyan")
         goodbye_text.append("\n\n")
-        goodbye_text.append("Keep learning, stay secure! 🚀", style="italic green")
+        goodbye_text.append("Keep learning, stay secure!", style="italic green")
         
         self.console.print(Panel(
             goodbye_text,
@@ -190,7 +195,7 @@ def main(
     api_key: str = typer.Option(None, "--api-key", help="GROQ API key")
 ):
     """
-    🛡️ CyberMentor AI - Interactive Cybersecurity Learning
+    CyberMentor AI - Interactive Cybersecurity Learning
     
     An educational terminal application that teaches cybersecurity concepts
     through interactive demos and AI-powered explanations.
@@ -210,9 +215,9 @@ def main(
         asyncio.run(cyber_mentor.run_main_loop())
         
     except KeyboardInterrupt:
-        console.print("\n👋 Goodbye!", style="cyan")
+        console.print("\nGoodbye!", style="cyan")
     except Exception as e:
-        console.print(f"\n❌ Fatal error: {e}", style="red")
+        console.print(f"\nFatal error: {e}", style="red")
         if dev_mode:
             raise
         sys.exit(1)
