@@ -1,0 +1,125 @@
+/* ===============================================
+   BACKUP DO CSS ORIGINAL - CRIPTOGRAFIA.PY
+   Data: 2025-09-30
+   Motivo: Reset para CSS básico funcional
+   =============================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ===== ANIMAÇÕES ESSENCIAIS ===== */
+@keyframes glow { 
+    0%, 100% { box-shadow: 0 0 5px #667eea; }
+    50% { box-shadow: 0 0 20px #667eea, 0 0 30px #667eea; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ===== LAYOUT PRINCIPAL - SEM AFETAR SIDEBAR ===== */
+.main .block-container {
+    background: linear-gradient(45deg, #0f0f23, #1a1a2e, #16213e);
+    color: #ffffff;
+}
+
+/* ===== EXPANDERS OTIMIZADOS ===== */
+[data-testid="stExpander"] div[role="button"] {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #00ff41;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+[data-testid="stExpander"] .streamlit-expanderContent {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #00ff41;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
+[data-testid="stExpander"] h3, [data-testid="stExpander"] h4 {
+    color: #00ff41;
+}
+
+[data-testid="stExpander"] strong {
+    color: #00ff41;
+}
+
+[data-testid="stExpander"] p, [data-testid="stExpander"] li {
+    color: #ffffff;
+}
+
+/* ===== COMPONENTES DE JOGO ===== */
+.game-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 15px 0;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(102,126,234,0.4);
+}
+
+.mini-game {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    margin: 15px 0;
+    border: 2px solid #ff8c42;
+}
+
+/* ===== HISTÓRIAS CRIMINAIS ===== */
+.crime-story {
+    background: linear-gradient(145deg, #2c1810, #3d2317);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #ff6b35;
+    margin: 20px 0;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.crime-story:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255,107,53,0.3);
+}
+
+.crime-story h3 { color: #ff6b35; font-size: 1.4em; }
+.crime-story h4 { color: #00ff41; font-size: 1.2em; }
+.crime-story p, .crime-story li { color: #ffffff; }
+.crime-story strong { color: #00ff41; }
+
+/* ===== ELEMENTOS INTERATIVOS ===== */
+.interactive-demo {
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #00ff41;
+    color: #00ff41;
+    margin: 20px 0;
+}
+
+.hacker-terminal {
+    background: #000;
+    color: #00ff41;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    border: 2px solid #00ff41;
+}
+
+/* E muito mais CSS complexo que estava causando conflitos... */
+
+/* ===============================================
+   FIM DO BACKUP
+   =============================================== */
