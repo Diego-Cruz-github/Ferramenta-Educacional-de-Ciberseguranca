@@ -1,94 +1,103 @@
-# CyberMentor AI - Ferramenta Educacional de Cibersegurança
+# 🛡️ CyberMentor AI - Interactive Cybersecurity Learning Tool
 
-**Aplicação terminal educacional em Python para aprendizado prático de conceitos de cibersegurança com IA integrada.**
+**Educational terminal application in Python for practical learning of cybersecurity concepts with integrated AI mentor.**
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)](https://python.org)
 [![Security](https://img.shields.io/badge/Security-Educational-green?logo=shield&logoColor=white)](https://github.com/Diego-Cruz-github/Ferramenta-Educacional-de-Ciberseguranca)
 [![AI Powered](https://img.shields.io/badge/AI-GROQ%20Integrated-purple?logo=openai&logoColor=white)](https://groq.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow?logo=opensourceinitiative&logoColor=white)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active%20Development-orange?logo=construction&logoColor=white)](https://github.com/Diego-Cruz-github/Ferramenta-Educacional-de-Ciberseguranca)
 
 ---
 
-## Sobre o Projeto
+## 🚧 Development Status
 
-**CyberMentor AI** é uma ferramenta educacional terminal que ensina conceitos básicos de **cibersegurança** através de demonstrações práticas e chat IA integrado.
+**This project is currently under active development.** New features, modules, and improvements are being added regularly. The current version includes functional cryptography labs, web security demos, and AI-powered learning assistance.
 
-### Funcionalidades Implementadas
-
-- **Laboratório de Criptografia Completo**: 5 demos interativos (hashes, passwords, encryption, rainbow tables, crypto analysis)
-- **Demos de Segurança Web**: Análise HTTP headers, SQL injection e XSS educacional
-- **Ferramentas de Rede**: Port scanning, ping, DNS lookup e análise de configuração
-- **Forense Digital**: Análise de arquivos, extração de metadados e detecção de dados ocultos
-- **Chat IA Especializado**: Explicações com GROQ API + modo offline
-- **Interface Terminal Rica**: Menus coloridos com biblioteca Rich
+Feel free to explore the existing features and stay tuned for updates! 🚀
 
 ---
 
-## Tecnologias Utilizadas
+## 📖 About the Project
 
-- **Python 3.9+** - Linguagem principal
-- **Rich** - Interface terminal colorida e tabelas
-- **Typer** - Framework CLI moderno
-- **GROQ API** - IA para chat especializado
-- **Cryptography** - Demos de encryption/decryption
-- **bcrypt** - Hashing seguro de passwords
-- **aiohttp** - Client HTTP assíncrono
+**CyberMentor AI** is an educational terminal tool that teaches fundamental **cybersecurity concepts** through hands-on demonstrations and integrated AI chat support.
+
+### 🎯 Implemented Features
+
+- **🔐 Complete Cryptography Lab**: 5 interactive demos (hashes, passwords, encryption, rainbow tables, crypto analysis)
+- **🌐 Web Security Demos**: HTTP headers analysis, educational SQL injection and XSS
+- **🔧 Network Tools**: Port scanning, ping, DNS lookup and configuration analysis
+- **🔍 Digital Forensics**: File analysis, metadata extraction and hidden data detection
+- **💬 Specialized AI Chat**: Explanations with GROQ API + offline mode
+- **✨ Rich Terminal Interface**: Colorful menus with Rich library
 
 ---
 
-## Estrutura do Projeto
+## 🛠️ Technologies Used
+
+- **Python 3.9+** - Core language
+- **Rich** - Colorful terminal interface and tables
+- **Typer** - Modern CLI framework
+- **GROQ API** - AI for specialized chat
+- **Cryptography** - Encryption/decryption demos
+- **bcrypt** - Secure password hashing
+- **aiohttp** - Asynchronous HTTP client
+
+---
+
+## 📁 Project Structure
 
 ```
 Ferramenta-Educacional-de-Ciberseguranca/
-├── main.py                    # Aplicação principal
-├── requirements.txt           # Dependências
+├── main.py                    # Main application
+├── requirements.txt           # Dependencies
 │
-├── core/                      # Módulos principais
-│   ├── ai_mentor.py          # Chat IA com GROQ
-│   └── menu_system.py        # Interface de menus
+├── core/                      # Core modules
+│   ├── ai_mentor.py          # AI chat with GROQ
+│   └── menu_system.py        # Menu interface system
 │
-└── demos/                     # Demonstrações educacionais
-    ├── crypto_demo.py        # Laboratório de criptografia
-    ├── web_demo.py           # Segurança web
-    ├── network_demo.py       # Ferramentas de rede
-    └── forensics_demo.py     # Forense digital
+└── demos/                     # Educational demonstrations
+    ├── crypto_demo.py        # Cryptography laboratory
+    ├── web_demo.py           # Web security
+    ├── network_demo.py       # Network tools
+    └── forensics_demo.py     # Digital forensics
 ```
 
 ---
 
-## Como Usar
+## 🚀 How to Use
 
-### Instalação
+### 📦 Installation
 
 ```bash
-# 1. Clone o repositório
+# 1. Clone the repository
 git clone https://github.com/Diego-Cruz-github/Ferramenta-Educacional-de-Ciberseguranca.git
 cd Ferramenta-Educacional-de-Ciberseguranca
 
-# 2. Instale dependências
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Execute
+# 3. Run the application
 python main.py
 ```
 
-### Configuração do Chat IA (Opcional)
+### 🤖 AI Chat Configuration (Optional)
 
 ```bash
-# Com GROQ API key
-export GROQ_API_KEY="sua_chave"
+# With GROQ API key
+export GROQ_API_KEY="your_key"
 python main.py
 
-# Sem API (modo offline)
+# Without API (offline mode)
 python main.py
 ```
 
-**Como obter chave GROQ gratuita:**
-1. Acesse [console.groq.com](https://console.groq.com)
-2. Crie conta e gere API key
-3. 100 requisições grátis por dia
+**How to get free GROQ key:**
+1. Visit [console.groq.com](https://console.groq.com)
+2. Create account and generate API key
+3. 100 free requests per day
 
-### Menu Principal
+### 📋 Main Menu
 
 ```
 Learning Modules
@@ -105,34 +114,34 @@ Learning Modules
 └────────┴─────────────────────────┴────────────────────────────────────────┘
 ```
 
-### Laboratório de Criptografia
+### 🔐 Cryptography Laboratory
 
-**5 demonstrações interativas disponíveis:**
+**5 interactive demonstrations available:**
 
-1. **Hash Functions** - Comparação MD5, SHA1, SHA256, SHA512
+1. **Hash Functions** - Compare MD5, SHA1, SHA256, SHA512
 2. **Password Security** - Hashing, salting, bcrypt  
 3. **Symmetric Encryption** - AES encryption/decryption
-4. **Rainbow Table Attack** - Como funcionam e defesas
-5. **Crypto Analysis** - Efeito avalanche e propriedades
+4. **Rainbow Table Attack** - How they work and defenses
+5. **Crypto Analysis** - Avalanche effect and properties
 
-### Chat IA
+### 💬 AI Chat
 
-- Perguntas sobre cibersegurança em português
-- Explicações educacionais contextualizadas
-- Funciona online (GROQ) ou offline (respostas pré-definidas)
+- Ask cybersecurity questions in natural language
+- Contextualized educational explanations
+- Works online (GROQ) or offline (predefined responses)
 
 ---
 
-## Conteúdo Educacional
+## 📚 Educational Content
 
-### Laboratório de Criptografia (Implementado)
+### 🔐 Cryptography Laboratory (Implemented)
 
-**Conceitos abordados:**
-- **Funções Hash**: MD5, SHA1, SHA256, SHA512 - segurança e vulnerabilidades
-- **Segurança de Senhas**: Salt, bcrypt, armazenamento seguro
-- **Criptografia Simétrica**: AES encryption/decryption prática
-- **Ataques Rainbow Table**: Como funcionam e defesas
-- **Análise Criptográfica**: Efeito avalanche, resistência a colisões
+**Concepts covered:**
+- **Hash Functions**: MD5, SHA1, SHA256, SHA512 - security and vulnerabilities
+- **Password Security**: Salt, bcrypt, secure storage
+- **Symmetric Cryptography**: Practical AES encryption/decryption
+- **Rainbow Table Attacks**: How they work and defenses
+- **Cryptographic Analysis**: Avalanche effect, collision resistance
 
 **Exemplo real do Hash Demo:**
 ```
@@ -147,72 +156,85 @@ Hash Results
 
 ---
 
-## Chat IA Integrado
+## 🤖 Integrated AI Chat
 
-**Funcionalidades:**
-- Chat educacional especializado em cibersegurança
-- Explicações em português brasileiro
-- Modo online (GROQ API) + fallback offline
-- Respostas contextualizadas e éticas
+**Features:**
+- Educational chat specialized in cybersecurity
+- Natural language explanations
+- Online mode (GROQ API) + offline fallback
+- Contextualized and ethical responses
 
-**Exemplo de uso:**
+**Usage example:**
 ```
-Sua pergunta: O que é criptografia simétrica?
+Your question: What is symmetric cryptography?
 
 CyberMentor AI:
-Criptografia simétrica usa a mesma chave para criptografar e descriptografar dados.
+Symmetric cryptography uses the same key for encryption and decryption.
 
-Exemplos: AES, DES, 3DES
-Vantagens: Rápida, eficiente para grandes volumes
-Desvantagens: Distribuição segura da chave é desafiadora
+Examples: AES, DES, 3DES
+Advantages: Fast, efficient for large volumes
+Disadvantages: Secure key distribution is challenging
 
-Use para: Criptografia de arquivos, comunicação onde as partes já compartilham chaves.
+Use for: File encryption, communication where parties already share keys.
 ```
 
 ---
 
-## Opções Avançadas
+## ⚙️ Advanced Options
 
 ```bash
-# Modo desenvolvedor com logs
+# Developer mode with logs
 python main.py --dev
 
-# Especificar API key
-python main.py --api-key "sua_chave_groq"
+# Specify API key
+python main.py --api-key "your_groq_key"
 ```
 
 ---
 
-## Para Quem é Esta Ferramenta
+## 🎯 Who This Tool Is For
 
-- **Estudantes** iniciantes em cibersegurança
-- **Desenvolvedores** querendo aprender security básica
-- **Curiosos** sobre criptografia e segurança digital
-- **Professores** buscando material educacional prático
-
----
-
-## Licença
-
-MIT License - Use livremente para fins educacionais.
+- **Students** beginning in cybersecurity
+- **Developers** wanting to learn basic security
+- **Curious minds** about cryptography and digital security
+- **Teachers** seeking practical educational material
 
 ---
 
-## Aviso Legal
+## 📜 License
 
-**Uso exclusivamente educacional.** Não use para atividades ilegais ou ataques não autorizados. O usuário é responsável pelo uso apropriado desta ferramenta.
+MIT License - Use freely for educational purposes.
 
 ---
 
-## Desenvolvido por
+## ⚠️ Legal Notice
+
+**Educational use only.** Do not use for illegal activities or unauthorized attacks. The user is responsible for appropriate use of this tool.
+
+---
+
+## 💻 Future Development Plans
+
+**Planned modules and features:**
+- 🕵️ **OSINT Basics** - Ethical information gathering techniques
+- 🦠 **Malware Analysis** - Safe sandboxing and analysis methods  
+- 🛡️ **System Hardening** - Security configuration best practices
+- 🚨 **Incident Response** - Cybersecurity incident handling procedures
+- 🎮 **Gamification** - Points, achievements, and progress tracking
+- 🌐 **Web Interface** - Optional Streamlit-based GUI
+
+*Stay tuned for updates!* 🚀
+
+---
+
+## 👨‍💻 Developed by
 
 **Diego Fonte**  
 *Full Stack Developer & Cybersecurity/AI Consultant*
 
 Website: [diegofontedev.com.br](https://diegofontedev.com.br/)  
-Empresa: [zowti.com](https://zowti.com/)  
-Contato: contato@diegofontedev.com.br
+Contact: contato@diegofontedev.com.br
 
 ---
 
-*"Educação em segurança digital para todos."*
+*"🎓 Digital security education for everyone."*
