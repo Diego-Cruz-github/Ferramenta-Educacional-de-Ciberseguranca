@@ -2,6 +2,20 @@
 
 **Educational terminal application in Python for practical learning of cybersecurity concepts with integrated AI mentor.**
 
+## 📺 Live Demonstrations
+
+### Terminal Interface in Action
+![Main Menu Demo](ss's%20-%20Ferramenta%20Cyber/Gravando-2025-10-31-183853.gif)
+
+### Cryptography Laboratory
+![Cryptography Demo](ss's%20-%20Ferramenta%20Cyber/Gravando-2025-10-31-184018.gif)
+
+### Web Security Analysis
+![Web Security Demo](ss's%20-%20Ferramenta%20Cyber/Gravando-2025-10-31-184202.gif)
+
+### AI Chat Integration
+![AI Chat Demo](ss's%20-%20Ferramenta%20Cyber/Gravando%202025-10-31%20184259.gif)
+
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)](https://python.org)
 [![Security](https://img.shields.io/badge/Security-Educational-green?logo=shield&logoColor=white)](https://github.com/Diego-Cruz-github/Ferramenta-Educacional-de-Ciberseguranca)
 [![AI Powered](https://img.shields.io/badge/AI-GROQ%20Integrated-purple?logo=openai&logoColor=white)](https://groq.com)
